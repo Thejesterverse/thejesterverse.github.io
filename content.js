@@ -75,14 +75,13 @@ window.SITE = {
     { id: "current", label: "Current" },
     { id: "affiliate", label: "Affiliate partnerships" },
     { id: "past", label: "Past" },
-    { id: "collaboration", label: "KOL collaborations" },
     { id: "contribution", label: "Contributions" }
   ],
 
   roles: [
     { id: "actionmodel", name: "Action Model AI (ActionFi)", short: "Action Model", handle: "@ActionModelAI", url: "https://x.com/ActionModelAI", logo: "assets/logos/actionmodel.jpg", group: "current", title: "Business development", summary: "I source Web3 projects and pitch them on ActionFi, run cold outreach over X, Telegram and Discord, and keep the partnership pipeline tracked." },
     { id: "koinbx", name: "KoinBX", short: "KoinBX", handle: "@KoinBX", url: "https://x.com/KoinBX", logo: "assets/logos/koinbx.jpg", group: "current", title: "Official KOL", summary: "Content for KoinBX campaigns and trading contests." },
-    { id: "cellframe", name: "Cellframe", short: "Cellframe", handle: "@cellframenet", url: "https://x.com/cellframenet", logo: "assets/logos/cellframe.jpg", group: "current", title: "Ambassador", summary: "Community growth and awareness." },
+    { id: "cellframe", name: "Cellframe", short: "Cellframe", handle: "@cellframenet", url: "https://x.com/cellframenet", logo: "assets/logos/cellframe.jpg", group: "current", title: "Core Contributor & Ambassador", summary: "Dec 2025 – Present. Community growth and awareness." },
     { id: "kindworld", name: "KindWorld", short: "KindWorld", handle: "@kindworldlabs", url: "https://x.com/kindworldlabs", logo: "assets/logos/kindworld.jpg", group: "current", title: "Ambassador", summary: "Ambassador since Oct 13, 2026. Community growth and awareness." },
 
     { id: "weex", name: "WEEX", short: "WEEX", handle: "@WEEX_Official", url: "https://x.com/WEEX_Official", logo: "assets/logos/weex.jpg", group: "affiliate", title: "Affiliate partner", summary: "Affiliate content partnership." },
@@ -94,11 +93,8 @@ window.SITE = {
     { id: "aryze", name: "Aryze", short: "Aryze", handle: "@AryzeOfficial", url: "https://x.com/AryzeOfficial", logo: "assets/logos/aryze.jpg", group: "past", title: "Ambassador", summary: "Money software for banks and payment companies, issuing Digital Cash." },
     { id: "fastx", name: "FastX Network", short: "FastX Network", handle: "@FastXNetwork", url: "https://x.com/FastXNetwork", logo: "assets/logos/fastx.jpg", group: "past", title: "Content Creator", summary: "Onchain AI infrastructure that links GPU nodes and applications into a Web3 AI network." },
 
-    { id: "pushx", name: "PushX", short: "PushX", handle: "@_Push_X_", url: "https://x.com/_Push_X_", logo: "assets/logos/pushx.jpg", group: "collaboration", title: "KOL collaboration", summary: "Community-powered growth on X: complete tasks, earn points and promote posts." },
-    { id: "moonrush", name: "MoonRush", short: "MoonRush", handle: "@moonrush_space", url: "https://x.com/moonrush_space", logo: "assets/logos/moonrush.jpg", group: "collaboration", title: "KOL collaboration", summary: "A social trading app for humans and AI agents, live on the App Store and Google Play." },
 
     { id: "injective", name: "Injective", short: "Injective", handle: "@injective", url: "https://x.com/injective", logo: "assets/logos/injective.jpg", group: "contribution", title: "Contribution", summary: "A blockchain where users, institutions and AI agents trade, tokenize and transact at scale." },
-    { id: "goatnetwork", name: "GOAT Network", short: "GOAT Network", handle: "@GOATNetwork", url: "https://x.com/GOATNetwork", logo: "assets/logos/goatnetwork.jpg", group: "contribution", title: "Contribution", summary: "Bitcoin-secured infrastructure for agentic commerce." },
     { id: "xora", name: "XORA", short: "XORA", handle: "@xora_finance", url: "https://x.com/xora_finance", logo: "assets/logos/xora.jpg", group: "contribution", title: "Contributor, content", summary: "A breakdown of XORA on the XRP Ledger and its Bounty Marketplace for contributors." },
     { id: "memu", name: "memU", short: "memU", handle: "@memU_ai", url: "https://x.com/memU_ai", logo: "assets/logos/memu.jpg", group: "contribution", title: "Contributor", summary: "" }
   ],
