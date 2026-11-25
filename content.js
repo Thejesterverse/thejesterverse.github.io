@@ -39,7 +39,7 @@ window.SITE = {
 
   seo: {
     title: "Thejesterverse · Web3 BD, KOL & ambassador",
-    description: "Thejesterverse (@ThejesterVerse): Web3 business development, KOL and community growth. BD at Action Model, KOL for KoinBX, ambassador for Cellframe and KindWorld. Lagos, open to remote work.",
+    description: "Thejesterverse (@ThejesterVerse): Web3 business development, KOL and community growth. BD at Action Model, KOL for KoinBX, ambassador for Cellframe, KindWorld and ShopinX. Lagos, open to remote work.",
     keywords: "Web3 BD, Web3 KOL, Community Management, Web3 Partnerships, Thejesterverse",
     ogImage: "https://yehudahjr.github.io/thejesterverse/assets/banner.jpg"
   },
@@ -65,8 +65,8 @@ window.SITE = {
     note: "X figures from public profile data on Nov 24, 2026. Only verified figures are shown.",
     items: [
       { value: "3K+", label: "followers on X" },
-      { value: "6", label: "current roles across BD, KOL, affiliate and ambassador work" },
-      { value: "6", label: "ambassador programs, 2 of them current" },
+      { value: "7", label: "current roles across BD, KOL, affiliate and ambassador work" },
+      { value: "7", label: "ambassador programs, 3 of them current" },
       { value: "11.7K", label: "posts since joining X in Nov 2024" }
     ]
   },
@@ -83,6 +83,7 @@ window.SITE = {
     { id: "koinbx", name: "KoinBX", short: "KoinBX", handle: "@KoinBX", url: "https://x.com/KoinBX", logo: "assets/logos/koinbx.jpg", group: "current", title: "Official KOL", summary: "Content for KoinBX campaigns and trading contests." },
     { id: "cellframe", name: "Cellframe", short: "Cellframe", handle: "@cellframenet", url: "https://x.com/cellframenet", logo: "assets/logos/cellframe.jpg", group: "current", title: "Core Contributor & Ambassador", summary: "Dec 2025 – Present. Community growth and awareness." },
     { id: "kindworld", name: "KindWorld", short: "KindWorld", handle: "@kindworldlabs", url: "https://x.com/kindworldlabs", logo: "assets/logos/kindworld.jpg", group: "current", title: "Ambassador", summary: "Ambassador since Oct 13, 2026. Community growth and awareness." },
+    { id: "shopinx", name: "ShopinX", short: "ShopinX", handle: "@shopinxSHOPINX", url: "https://x.com/shopinxSHOPINX", logo: "assets/logos/shopinx.jpg", group: "current", title: "Ambassador", summary: "Commerce and loyalty on BNB Chain, with GoBenefits offers across 400+ brands." },
 
     { id: "weex", name: "WEEX", short: "WEEX", handle: "@WEEX_Official", url: "https://x.com/WEEX_Official", logo: "assets/logos/weex.jpg", group: "affiliate", title: "Affiliate partner", summary: "Affiliate content partnership." },
     { id: "alphax", name: "AlphaX", short: "AlphaX", handle: "@AlphaX_DEX", url: "https://x.com/AlphaX_DEX", logo: "assets/logos/alphax.jpg", group: "affiliate", title: "Official affiliate partner", summary: "Campaign breakdowns and affiliate content." },
@@ -232,7 +233,7 @@ window.SITE = {
       project: "Community growth",
       role: "Ambassador and community work",
       objective: "Project, objective and dates to be added.",
-      contribution: "Ambassador work for Cellframe, KindWorld, TauntLive, Midnight, Astra and Aryze. Growth that shows up in the group chat.",
+      contribution: "Ambassador work for Cellframe, KindWorld, ShopinX, TauntLive, Midnight, Astra and Aryze. Growth that shows up in the group chat.",
       deliverables: ["Community representation (case details to be added)"],
       outcomes: [],
       outcomeNote: "A specific, verified community-growth case will be added here.",
