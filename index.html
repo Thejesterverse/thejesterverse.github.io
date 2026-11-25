@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thejesterverse · Web3 BD, KOL and community</title>
+<meta name="description" content="Thejesterverse (@ThejesterVerse): business development at Action Model, KOL for KoinBX, affiliate partner for WEEX and AlphaX, ambassador for Cellframe and KindWorld. Lagos, open to remote work.">
+<meta property="og:title" content="Thejesterverse · Web3 BD, KOL and community">
+<meta property="og:description" content="BD at Action Model. KOL for KoinBX. Ambassador for Cellframe and KindWorld. Research-led posts and community work.">
+<meta property="og:image" content="assets/banner.jpg">
+<link rel="icon" href="assets/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#090c14; --bg2:#0e1320; --card:#111827; --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
+  --ink:#eef0f4; --mute:#9aa3b2; --dim:#6b7383;
+  --red:#d8283a; --red2:#ff4d5e; --gold:#d9b779;
+  --serif:"Instrument Serif",Georgia,serif; --sans:"Space Grotesk",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,monospace;
+  --r:18px; --w:1160px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+   radial-gradient(900px 500px at 85% -10%,rgba(216,40,58,.16),transparent 60%),
+   radial-gradient(700px 500px at -10% 30%,rgba(217,183,121,.07),transparent 60%),
+   var(--bg)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 28px}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:10px}
+.eyebrow:before{content:"";width:9px;height:9px;background:var(--red);transform:rotate(45deg);flex:none}
+h1,h2,h3{font-weight:400}
+h2{font-family:var(--serif);font-size:clamp(38px,5vw,60px);line-height:1.02;letter-spacing:-.01em;margin:14px 0 18px}
+h2 em,h1 em{font-style:italic;color:var(--gold)}
+.lead{color:var(--mute);max-width:620px}
+section{padding:110px 0 0}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(9,12,20,.78);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:600;letter-spacing:-.01em}
+.brand img{width:34px;height:34px;border-radius:50%;border:1px solid var(--line2)}
+.brand span{font-family:var(--serif);font-size:24px;font-weight:400}
+.brand span i{color:var(--red2)}
+.links{display:flex;gap:28px;font-size:14.5px;color:var(--mute)}
+.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;border:1px solid var(--line2);transition:.2s;cursor:pointer;background:none;color:var(--ink);font-family:var(--sans)}
+.btn:hover{border-color:var(--ink)}
+.btn.red{background:var(--red);border-color:var(--red);color:#fff}
+.btn.red:hover{background:var(--red2);border-color:var(--red2)}
+.btn.sm{padding:9px 16px;font-size:14px}
+.btn svg{width:16px;height:16px}
+/* hero */
+.hero{padding:76px 0 0}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:56px;align-items:center}
+.hero h1{font-family:var(--serif);font-size:clamp(52px,7.4vw,96px);line-height:.95;letter-spacing:-.02em;margin:22px 0 24px}
+.hero p.lead{font-size:19px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 32px}
+.tag{font-size:13.5px;padding:6px 13px;border:1px solid var(--line2);border-radius:999px;color:var(--mute)}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.portrait{position:relative;aspect-ratio:4/5;border-radius:26px;overflow:hidden;border:1px solid var(--line2);background:#a3141f}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.portrait:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(9,12,20,.9))}
+.portrait .cap{position:absolute;left:20px;right:20px;bottom:18px;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.portrait .cap b{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1}
+.portrait .cap small{display:block;color:var(--mute);font-size:13px;margin-top:6px}
+.live{white-space:nowrap;flex:none;display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;padding:6px 10px;border-radius:999px;background:rgba(9,12,20,.75);border:1px solid var(--line2)}
+.live:before{content:"";width:7px;height:7px;border-radius:50%;background:#3ddc84;box-shadow:0 0 0 3px rgba(61,220,132,.2)}
+.diamonds{position:absolute;top:16px;left:16px;z-index:2;display:flex;gap:5px}
+.diamonds i{width:10px;height:10px;transform:rotate(45deg);background:var(--gold)}
+.diamonds i:nth-child(2){background:var(--ink)}
+.diamonds i:nth-child(3){background:var(--red2)}
+/* stats */
+.stats{margin-top:72px;display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:rgba(17,24,39,.5)}
+.stat{padding:26px 26px 22px;border-right:1px solid var(--line)}
+.stat:last-child{border-right:0}
+.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:46px;line-height:1}
+.stat span{display:block;color:var(--mute);font-size:14.5px;margin-top:10px}
+.stat a{color:var(--gold);font-size:13px}
+.asof{margin-top:12px;color:var(--dim);font-size:13px}
+/* proof */
+.proof-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.post{background:var(--card);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:.25s}
+.post:hover{border-color:var(--line2);transform:translateY(-3px)}
+.post .media{aspect-ratio:16/9;overflow:hidden;border-bottom:1px solid var(--line)}
+.post .media img{width:100%;height:100%;object-fit:cover}
+.post .body{padding:24px 24px 22px;display:flex;flex-direction:column;gap:12px;flex:1}
+.post .meta{display:flex;justify-content:space-between;color:var(--dim)}
+.post h3{font-family:var(--serif);font-size:28px;line-height:1.1}
+.post p{color:var(--mute);font-size:15.5px}
+.nums{display:flex;gap:22px;flex-wrap:wrap;margin-top:auto;padding-top:14px;border-top:1px solid var(--line)}
+.nums div b{display:block;font-size:22px;font-weight:600}
+.nums div span{font-size:12.5px;color:var(--dim)}
+.nums div.hi b{color:var(--gold)}
+.open{color:var(--gold);font-size:14.5px;font-weight:600}
+/* roles */
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:40px}
+.col h3{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-bottom:14px}
+.role{display:grid;grid-template-columns:52px 1fr auto;gap:16px;align-items:center;padding:16px 0;border-top:1px solid var(--line)}
+.role img{width:52px;height:52px;border-radius:14px;border:1px solid var(--line2)}
+.role b{display:block;font-weight:600}
+.role span{color:var(--mute);font-size:14.5px}
+.role em{font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:5px 9px;border-radius:999px;border:1px solid var(--line2);color:var(--mute);white-space:nowrap}
+.role em.now{color:#3ddc84;border-color:rgba(61,220,132,.35)}
+.role a.h{color:var(--gold);font-size:13.5px}
+.note{margin-top:16px;padding:16px 18px;border-radius:14px;background:rgba(217,183,121,.06);border:1px solid rgba(217,183,121,.18);font-size:14.5px;color:var(--mute)}
+.note a{color:var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{font-size:14px;padding:8px 14px;border-radius:10px;background:var(--card);border:1px solid var(--line)}
+/* services */
+.svc{margin-top:36px;border-top:1px solid var(--line)}
+.svc-row{display:grid;grid-template-columns:70px 1fr 1.2fr;gap:24px;padding:28px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.svc-row .n{font-family:var(--mono);color:var(--red2);font-size:13px}
+.svc-row h3{font-family:var(--serif);font-size:32px;line-height:1.05}
+.svc-row p{color:var(--mute)}
+/* focus */
+.focus{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.fcard{padding:26px 22px;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,rgba(255,255,255,.03),transparent)}
+.fcard .ic{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;background:rgba(216,40,58,.12);color:var(--red2);margin-bottom:18px;font-family:var(--mono);font-size:13px}
+.fcard h3{font-size:20px;font-weight:600;margin-bottom:8px}
+.fcard p{color:var(--mute);font-size:15px}
+/* rooms */
+.rooms{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
+.room{padding:26px;border-radius:var(--r);border:1px solid var(--line);background:var(--card);display:flex;flex-direction:column;gap:10px}
+.room h3{font-family:var(--serif);font-size:28px;line-height:1.05}
+.room p{color:var(--mute);font-size:15px;flex:1}
+.room a{color:var(--gold);font-weight:600;font-size:14.5px}
+/* work */
+.work{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.wcard{display:flex;gap:16px;align-items:center;padding:18px;border:1px solid var(--line);border-radius:16px;background:rgba(17,24,39,.6);transition:.2s}
+.wcard:hover{border-color:var(--line2);background:var(--card)}
+.wcard.next{border-style:dashed;border-color:rgba(216,40,58,.45)}
+.wcard .plus{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;flex:none;background:rgba(216,40,58,.12);color:var(--red2);font-size:26px}
+.wcard img{width:54px;height:54px;border-radius:50%;border:1px solid var(--line2);flex:none}
+.wcard b{display:block;font-weight:600}
+.wcard span{display:block;color:var(--mute);font-size:14px}
+.wcard small{color:var(--gold);font-size:13px}
+/* ways */
+.ways{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+.way{padding:30px 26px;border-radius:var(--r);border:1px solid var(--line);position:relative;overflow:hidden}
+.way .n{font-family:var(--serif);font-size:64px;line-height:1;color:rgba(255,255,255,.08);position:absolute;right:18px;top:10px}
+.way h3{font-family:var(--serif);font-size:30px;margin:28px 0 10px;line-height:1.05}
+.way p{color:var(--mute);font-size:15.5px}
+.way.feat{border-color:rgba(216,40,58,.45);background:linear-gradient(180deg,rgba(216,40,58,.1),transparent 70%)}
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:36px;border-top:1px solid var(--line)}
+.step{padding:26px 22px 0 0}
+.step .n{font-family:var(--mono);font-size:12.5px;color:var(--red2)}
+.step h3{font-size:20px;font-weight:600;margin:12px 0 8px}
+.step p{color:var(--mute);font-size:15px}
+/* about */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+.about blockquote{font-family:var(--serif);font-size:clamp(32px,3.6vw,46px);line-height:1.08}
+.about blockquote em{color:var(--gold)}
+.about .txt p{color:var(--mute);margin-bottom:16px}
+.about .txt p b{color:var(--ink);font-weight:500}
+.banner{margin-top:28px;border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
+/* brief */
+.brief{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:36px}
+.panel{border:1px solid var(--line);border-radius:var(--r);background:var(--card);padding:28px}
+.fld{margin-bottom:22px}
+.fld label{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-bottom:10px}
+.fld input{width:100%;padding:13px 15px;border-radius:12px;border:1px solid var(--line2);background:var(--bg2);color:var(--ink);font:inherit;font-size:15.5px;outline:none}
+.fld input:focus{border-color:var(--gold)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{padding:9px 14px;border-radius:999px;border:1px solid var(--line2);font-size:14px;cursor:pointer;user-select:none;color:var(--mute);background:none;font-family:var(--sans)}
+.opt[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.out{display:flex;flex-direction:column}
+.out pre{flex:1;white-space:pre-wrap;font-family:var(--mono);font-size:14px;line-height:1.7;color:var(--ink);background:var(--bg2);border:1px dashed var(--line2);border-radius:14px;padding:22px;min-height:240px}
+.out .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.small{color:var(--dim);font-size:13.5px;margin-top:12px}
+/* contact */
+.contact{margin:110px 0 0;padding:56px;border-radius:28px;border:1px solid var(--line);background:radial-gradient(600px 300px at 100% 0,rgba(216,40,58,.18),transparent 60%),var(--card);display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center}
+.contact h2{margin-top:10px}
+.clist{display:flex;flex-direction:column;gap:10px}
+.clink{display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-radius:14px;border:1px solid var(--line2);background:rgba(9,12,20,.5);transition:.2s;cursor:pointer;color:var(--ink);font:inherit;width:100%;text-align:left}
+.clink:hover{border-color:var(--gold)}
+.clink span{color:var(--mute);font-size:14.5px}
+footer{padding:46px 0 50px;color:var(--dim);font-size:13.5px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,20px);opacity:0;background:var(--ink);color:var(--bg);padding:11px 18px;border-radius:999px;font-weight:600;font-size:14px;transition:.25s;z-index:99}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.menu{display:none}
+/* responsive */
+@media (max-width:980px){
+  .links{display:none}
+  .hero-grid,.about,.brief,.contact,.roles{grid-template-columns:1fr}
+  .portrait{max-width:420px}
+  .stats{grid-template-columns:1fr 1fr}
+  .stat:nth-child(2){border-right:0}
+  .stat:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .focus,.steps{grid-template-columns:1fr 1fr}
+  .work,.rooms,.ways{grid-template-columns:1fr 1fr}
+  .proof-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .wrap{padding:0 18px}
+  section{padding-top:80px}
+  .hero{padding-top:40px}
+  .hero-grid{gap:34px}
+  .nav .btn{display:none}
+  .stats{margin-top:48px}
+  .stat{padding:20px 18px}
+  .stat b{font-size:36px}
+  .svc-row{grid-template-columns:1fr;gap:6px;padding:22px 0}
+  .focus,.steps,.work,.rooms,.ways{grid-template-columns:1fr}
+  .step{padding-right:0}
+  .contact{padding:30px 22px;margin-top:80px}
+  .role{grid-template-columns:44px 1fr;gap:12px}
+  .role img{width:44px;height:44px}
+  .role em{grid-column:2;justify-self:start}
+  .post h3{font-size:24px}
+  .panel{padding:20px}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top"><img src="assets/portrait.jpg" alt=""><span>Thejester<i>verse</i></span></a>
+    <nav class="links">
+      <a href="#proof">Proof</a><a href="#roles">Roles</a><a href="#services">Services</a><a href="#work">Worked with</a><a href="#process">How it starts</a><a href="#brief">Brief</a>
+    </nav>
+    <a class="btn red sm" href="#brief">Start a brief</a>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Web3 growth &amp; community · Lagos, remote worldwide</div>
+        <h1>I find projects<br>the <em>right rooms</em>,<br>then fill them.</h1>
+        <p class="lead">I'm Thejesterverse. I do business development at Action Model, post as a KOL for KoinBX, run affiliate content for WEEX and AlphaX, and represent Cellframe and KindWorld as an ambassador. Research-led posts, community work and creator collabs for projects that want real attention.</p>
+        <div class="tags">
+          <span class="tag">Business development</span><span class="tag">KOL</span><span class="tag">Ambassador</span><span class="tag">Community manager</span><span class="tag">Spaces host</span><span class="tag">Degen trader</span>
+        </div>
+        <div class="cta">
+          <a class="btn red" href="#brief">Tell me what you need</a>
+          <a class="btn" href="https://x.com/ThejesterVerse" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8.1-9.3L1 2h7l4.8 6.3L18.9 2Zm-1.2 18h1.7L6.4 3.9H4.6L17.7 20Z"/></svg>@ThejesterVerse</a>
+        </div>
+      </div>
+      <div class="portrait">
+        <div class="diamonds"><i></i><i></i><i></i></div>
+        <img src="assets/portrait.jpg" alt="Thejesterverse avatar">
+        <div class="cap"><div><b>The jester verse</b><small>BD @ActionModelAI · KOL · ambassador</small></div><span class="live">Open to work</span></div>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>3K+</b><span>followers on X</span></div>
+      <div class="stat"><b>6</b><span>current roles across BD, KOL, affiliate and ambassador work</span></div>
+      <div class="stat"><b>6</b><span>ambassador programs, 2 of them current</span></div>
+      <div class="stat"><b>11.7K</b><span>posts since joining X in Nov 2024</span></div>
+    </div>
+    <p class="asof">X figures from public profile data on Nov 24, 2026.</p>
+  </div>
+
+  <!-- PROOF -->
+  <section id="proof">
+    <div class="eyebrow">Proof of work</div>
+    <h2>Posts people <em>actually read.</em></h2>
+    <p class="lead">My two strongest posts so far. Both are long-form, written from research, and live on X so you can check the numbers yourself.</p>
+    <div class="proof-grid">
+      <a class="post" href="https://x.com/ThejesterVerse/status/2082392518310703241" target="_blank" rel="noopener">
+        <div class="media"><img src="assets/post_xora.jpg" alt="XORA post image"></div>
+        <div class="body">
+          <div class="meta mono"><span>@xora_finance</span><span>Jul 29, 2026</span></div>
+          <h3>Why XORA is building more than another crypto platform</h3>
+          <p>A breakdown of XORA on the XRP Ledger and its Bounty Marketplace for contributors: what it is, why the XRPL choice matters, and what to watch next.</p>
+          <div class="nums">
+            <div class="hi"><b>51</b><span>likes</span></div>
+            <div><b>21</b><span>replies</span></div>
+            <div><b>7</b><span>reposts</span></div>
+          </div>
+          <span class="open">Open on X &rarr;</span>
+        </div>
+      </a>
+      <a class="post" href="https://x.com/ThejesterVerse/status/2115584456228503809" target="_blank" rel="noopener">
+        <div class="media"><img src="assets/post_alphax.jpg" alt="AlphaX campaign post image"></div>
+        <div class="body">
+          <div class="meta mono"><span>@AlphaX_DEX</span><span>Oct 28, 2026</span></div>
+          <h3>AlphaX's 189,100 USDT trading campaign, explained</h3>
+          <p>An affiliate post that walks through the campaign terms: new-user voucher, deposit tiers, cashback and who can join, with a clear risk note at the end.</p>
+          <div class="nums">
+            <div class="hi"><b>207</b><span>likes</span></div>
+            <div><b>71</b><span>replies</span></div>
+            <div><b>14</b><span>reposts</span></div>
+          </div>
+          <span class="open">Open on X &rarr;</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ROLES -->
+  <section id="roles">
+    <div class="eyebrow">Roles</div>
+    <h2>Where I work <em>right now.</em></h2>
+    <div class="roles">
+      <div class="col">
+        <h3>Partnerships &amp; KOL</h3>
+        <div class="role"><img src="assets/logos/actionmodel.jpg" alt=""><div><b>Action Model AI (ActionFi)</b><span>Business development. I source Web3 projects and pitch them on ActionFi, run cold outreach over X, Telegram and Discord, and keep the partnership pipeline tracked.</span></div><em class="now">Current</em></div>
+        <div class="role"><img src="assets/logos/koinbx.jpg" alt=""><div><b>KoinBX</b><span>Official KOL. Content for KoinBX campaigns and trading contests.</span></div><em class="now">Current</em></div>
+        <div class="role"><img src="assets/logos/weex.jpg" alt=""><div><b>WEEX</b><span>Affiliate partner. Affiliate content partnership.</span></div><em class="now">Current</em></div>
+        <div class="role"><img src="assets/logos/alphax.jpg" alt=""><div><b>AlphaX</b><span>Official affiliate partner. Campaign breakdowns and affiliate content.</span></div><em class="now">Current</em></div>
+        <div class="note">At Action Model I'm on the team bringing projects to ActionFi. For an example of the kind of campaign the team runs, see Action Model's <a href="https://actionmodel.com/case-studies/sixr" target="_blank" rel="noopener">SIXR case study</a> (a team result, not a personal one).</div>
+      </div>
+      <div class="col">
+        <h3>Ambassador</h3>
+        <div class="role"><img src="assets/logos/cellframe.jpg" alt=""><div><b>Cellframe</b><span>Ambassador. Community growth and awareness.</span></div><em class="now">Current</em></div>
+        <div class="role"><img src="assets/logos/kindworld.jpg" alt=""><div><b>KindWorld</b><span>Ambassador since Oct 13, 2026. Community growth and awareness.</span></div><em class="now">Current</em></div>
+        <div class="role"><img src="assets/logos/tauntlive.jpg" alt=""><div><b>TauntLive</b><span>Ambassador. Represented the project in the community.</span></div><em>Past</em></div>
+        <div class="role"><img src="assets/logos/midnight.jpg" alt=""><div><b>Midnight</b><span>Alpha Ambassador.</span></div><em>Past</em></div>
+        <div class="role"><img src="assets/logos/astra.jpg" alt=""><div><b>Astra</b><span>Ambassador. An AI-powered, KYC-first Layer 2 for Web3 compliance.</span></div><em>Past</em></div>
+        <div class="role"><img src="assets/logos/aryze.jpg" alt=""><div><b>Aryze</b><span>Ambassador. Money software for banks and payment companies, issuing Digital Cash.</span></div><em>Past</em></div>
+        <h3 style="margin-top:26px">Ecosystem contributions</h3>
+        <div class="chips">
+          <span class="chip">memU.ai</span><span class="chip">U2U</span><span class="chip">Stellar West Africa Chapter</span><span class="chip">XORA</span><span class="chip">BIGOD</span><span class="chip">Spaace</span><span class="chip">iVault</span><span class="chip">AI Coach</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="eyebrow">Services</div>
+    <h2>What I can <em>take off your plate.</em></h2>
+    <div class="svc">
+      <div class="svc-row"><span class="n">01</span><h3>Campaigns</h3><p>Launch and moment-based campaigns: narrative, timing, and the posts that carry it, not a pile of random shoutouts.</p></div>
+      <div class="svc-row"><span class="n">02</span><h3>New users</h3><p>Bringing new users in through the channels that already trust the voice &mdash; community, content, and direct introductions.</p></div>
+      <div class="svc-row"><span class="n">03</span><h3>KOL posts</h3><p>Long-form single posts and threads built from your docs, not your press release. ALL-CAPS hook, clear sections, the numbers that matter, and a risk note where it belongs.</p></div>
+      <div class="svc-row"><span class="n">04</span><h3>KOL network</h3><p>Coordinated KOL rounds through a group I already run, so a campaign goes wider than one account.</p></div>
+      <div class="svc-row"><span class="n">05</span><h3>Partnerships &amp; BD</h3><p>Sourcing and pitching partners, cold outreach over X, Telegram and Discord, follow-ups that don't go cold, and a pipeline you can actually read.</p></div>
+      <div class="svc-row"><span class="n">06</span><h3>Spaces &amp; AMAs</h3><p>I host and speak in X Spaces and AMAs, and I'll get your project into the conversation in plain language.</p></div>
+      <div class="svc-row"><span class="n">07</span><h3>Ambassador &amp; community</h3><p>Ambassador and community programs: onboarding, the daily chat, moderation, and the cadence that keeps a group talking after announcement day.</p></div>
+      <div class="svc-row"><span class="n">08</span><h3>Exchange awareness</h3><p>A listing or exchange campaign explained properly: the product, the terms, and the timing, written for traders.</p></div>
+    </div>
+  </section>
+
+  <!-- FOCUS -->
+  <section id="focus">
+    <div class="eyebrow">Focus</div>
+    <h2>The corners of Web3 <em>I know best.</em></h2>
+    <div class="focus">
+      <div class="fcard"><div class="ic">01</div><h3>Exchanges &amp; trading</h3><p>KOL and affiliate work with KoinBX, WEEX and AlphaX. I trade myself, so I write for traders.</p></div>
+      <div class="fcard"><div class="ic">02</div><h3>DeFi</h3><p>Deposits, liquidity, rewards and the fine print, explained for people who will actually use the product.</p></div>
+      <div class="fcard"><div class="ic">03</div><h3>AI</h3><p>BD at Action Model and contributions to memU.ai and AI Coach. Plain language for a skeptical crowd.</p></div>
+      <div class="fcard"><div class="ic">04</div><h3>Community</h3><p>Ambassador work for Cellframe, KindWorld, TauntLive, Midnight, Astra and Aryze. Growth that shows up in the group chat.</p></div>
+    </div>
+  </section>
+
+  <!-- ROOMS -->
+  <section id="rooms">
+    <div class="eyebrow">Rooms I run</div>
+    <h2>My own <em>communities.</em></h2>
+    <div class="rooms">
+      <div class="room"><span class="mono" style="color:var(--dim)">Telegram</span><h3>Degen traders group</h3><p>A Telegram group I run for degen traders.</p><a href="https://t.me/moonshot011" target="_blank" rel="noopener">t.me/moonshot011 &rarr;</a></div>
+      <div class="room"><span class="mono" style="color:var(--dim)">Telegram</span><h3>KOL group</h3><p>The group where I coordinate my KOL network for campaigns.</p><a href="https://t.me/pixelgrass" target="_blank" rel="noopener">t.me/pixelgrass &rarr;</a></div>
+      <div class="room"><span class="mono" style="color:var(--dim)">X</span><h3>Spaces</h3><p>I host and shill in Spaces. Follow on X to catch the next one.</p><a href="https://x.com/ThejesterVerse" target="_blank" rel="noopener">@ThejesterVerse &rarr;</a></div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section id="work">
+    <div class="eyebrow">Worked with</div>
+    <h2>Projects on <em>the record.</em></h2>
+    <p class="lead">Tap a card to open the project on X.</p>
+    <div class="work">
+      <a class="wcard" href="https://x.com/ActionModelAI" target="_blank" rel="noopener"><img src="assets/logos/actionmodel.jpg" alt=""><div><b>Action Model</b><span>Business development</span><small>@ActionModelAI</small></div></a>
+      <a class="wcard" href="https://x.com/KoinBX" target="_blank" rel="noopener"><img src="assets/logos/koinbx.jpg" alt=""><div><b>KoinBX</b><span>Official KOL</span><small>@KoinBX</small></div></a>
+      <a class="wcard" href="https://x.com/WEEX_Official" target="_blank" rel="noopener"><img src="assets/logos/weex.jpg" alt=""><div><b>WEEX</b><span>Affiliate partner</span><small>@WEEX_Official</small></div></a>
+      <a class="wcard" href="https://x.com/AlphaX_DEX" target="_blank" rel="noopener"><img src="assets/logos/alphax.jpg" alt=""><div><b>AlphaX</b><span>Affiliate partner</span><small>@AlphaX_DEX</small></div></a>
+      <a class="wcard" href="https://x.com/cellframenet" target="_blank" rel="noopener"><img src="assets/logos/cellframe.jpg" alt=""><div><b>Cellframe</b><span>Ambassador</span><small>@cellframenet</small></div></a>
+      <a class="wcard" href="https://x.com/kindworldlabs" target="_blank" rel="noopener"><img src="assets/logos/kindworld.jpg" alt=""><div><b>KindWorld</b><span>Ambassador</span><small>@kindworldlabs</small></div></a>
+      <a class="wcard" href="https://x.com/TauntCoin" target="_blank" rel="noopener"><img src="assets/logos/tauntlive.jpg" alt=""><div><b>TauntLive</b><span>Ambassador</span><small>@TauntCoin</small></div></a>
+      <a class="wcard" href="https://x.com/MidnightNtwrk" target="_blank" rel="noopener"><img src="assets/logos/midnight.jpg" alt=""><div><b>Midnight</b><span>Alpha Ambassador</span><small>@MidnightNtwrk</small></div></a>
+      <a class="wcard" href="https://x.com/Astra_HQ" target="_blank" rel="noopener"><img src="assets/logos/astra.jpg" alt=""><div><b>Astra</b><span>Ambassador</span><small>@Astra_HQ</small></div></a>
+      <a class="wcard" href="https://x.com/AryzeOfficial" target="_blank" rel="noopener"><img src="assets/logos/aryze.jpg" alt=""><div><b>Aryze</b><span>Ambassador</span><small>@AryzeOfficial</small></div></a>
+      <a class="wcard" href="https://x.com/xora_finance" target="_blank" rel="noopener"><img src="assets/logos/xora.jpg" alt=""><div><b>XORA</b><span>Contributor, content</span><small>@xora_finance</small></div></a>
+      <a class="wcard" href="https://x.com/memU_ai" target="_blank" rel="noopener"><img src="assets/logos/memu.jpg" alt=""><div><b>memU</b><span>Contributor</span><small>@memU_ai</small></div></a>
+      <a class="wcard" href="https://x.com/FastXNetwork" target="_blank" rel="noopener"><img src="assets/logos/fastx.jpg" alt=""><div><b>FastX Network</b><span>Content creator</span><small>@FastXNetwork</small></div></a>
+    </div>
+  </section>
+
+  <!-- WAYS -->
+  <section id="ways">
+    <div class="eyebrow">Ways to work together</div>
+    <h2>Three ways <em>in.</em></h2>
+    <div class="ways">
+      <div class="way feat"><span class="n">01</span><span class="mono" style="color:var(--gold)">Campaign</span><h3>A KOL campaign</h3><p>Research-led posts on my account, timed to your launch, campaign or contest. Add the KOL network when you need more reach.</p></div>
+      <div class="way"><span class="n">02</span><span class="mono" style="color:var(--dim)">Ongoing</span><h3>Ambassador &amp; community</h3><p>I stay in the room: content, Spaces and the daily work of keeping a community active.</p></div>
+      <div class="way"><span class="n">03</span><span class="mono" style="color:var(--dim)">Simple</span><h3>A partnership intro</h3><p>Sometimes the useful thing is a warm introduction to the right partner, platform or group of creators.</p></div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process">
+    <div class="eyebrow">How it starts</div>
+    <h2>From a DM to a <em>live campaign.</em></h2>
+    <div class="steps">
+      <div class="step"><span class="n">01 / Brief</span><h3>Send a note</h3><p>Project, stage and what you need. The composer below writes it for you.</p></div>
+      <div class="step"><span class="n">02 / Research</span><h3>I read up</h3><p>Docs, product and community first, so the content says something true.</p></div>
+      <div class="step"><span class="n">03 / Shape</span><h3>Agree the plan</h3><p>KOL posts, ambassador work or an intro. Timing and deliverables settled up front.</p></div>
+      <div class="step"><span class="n">04 / Ship</span><h3>Go live, report back</h3><p>Posts go out, I share the links and the numbers X shows, and we see what worked.</p></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about">
+      <blockquote>The jester gets to say what the court won't. <em>That's the job</em> in a crowded timeline.</blockquote>
+      <div class="txt">
+        <p>I'm based in <b>Lagos, Nigeria</b> and I work remotely with projects anywhere. My work covers ambassador programs and community management, KOL and affiliate content with exchanges, and <b>business development at Action Model</b>, where I pitch projects on ActionFi.</p>
+        <p>I write the way I'd want to be pitched: what the product does, what the numbers are, what the catch is. I trade too, so I know what traders skip and what they screenshot.</p>
+        <p>Outside of client work I run a degen traders group, coordinate a KOL group, and host or speak in X Spaces. I'm also studying Chemistry Education at the University of Uyo.</p>
+      </div>
+    </div>
+    <div class="banner"><img src="assets/banner.jpg" alt="Web3 growth and community: content, KOL, community, collaborations"></div>
+  </section>
+
+  <!-- BRIEF -->
+  <section id="brief">
+    <div class="eyebrow">Brief composer</div>
+    <h2>Tell me <em>what you need.</em></h2>
+    <p class="lead">Pick a few options and copy the note. Nothing is sent anywhere; it stays in your browser until you paste it into X or Telegram.</p>
+    <div class="brief">
+      <div class="panel">
+        <div class="fld"><label for="nm">Your name</label><input id="nm" placeholder="e.g. Sam from the growth team" autocomplete="off"></div>
+        <div class="fld"><label for="pj">Project</label><input id="pj" placeholder="Project name or X handle" autocomplete="off"></div>
+        <div class="fld"><label>Stage</label><div class="opts" data-group="stage" data-single>
+          <button class="opt" aria-pressed="false">Pre-launch</button><button class="opt" aria-pressed="false">TGE soon</button><button class="opt" aria-pressed="true">Live</button><button class="opt" aria-pressed="false">Running a campaign</button>
+        </div></div>
+        <div class="fld"><label>Looking for</label><div class="opts" data-group="need">
+          <button class="opt" aria-pressed="true">KOL posts</button><button class="opt" aria-pressed="false">KOL network</button><button class="opt" aria-pressed="false">Ambassador</button><button class="opt" aria-pressed="false">Community</button><button class="opt" aria-pressed="false">Spaces</button><button class="opt" aria-pressed="false">Partnership / BD</button>
+        </div></div>
+        <div class="fld" style="margin-bottom:0"><label>Timing</label><div class="opts" data-group="when" data-single>
+          <button class="opt" aria-pressed="false">This week</button><button class="opt" aria-pressed="true">This month</button><button class="opt" aria-pressed="false">Just exploring</button>
+        </div></div>
+      </div>
+      <div class="panel out">
+        <span class="mono" style="color:var(--dim);margin-bottom:12px">Note for Thejesterverse</span>
+        <pre id="note"></pre>
+        <div class="row">
+          <button class="btn red" id="copy">Copy note</button>
+          <a class="btn" href="https://t.me/ThejesterVerse" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn" href="https://x.com/ThejesterVerse" target="_blank" rel="noopener">X</a>
+        </div>
+        <p class="small">Copy first, then open Telegram or X and paste.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <div class="contact">
+    <div>
+      <div class="eyebrow">Contact</div>
+      <h2>DMs are <em>open.</em></h2>
+      <p class="lead">Telegram or X, both work. Say what the project is and what you need, and I'll come back to you.</p>
+    </div>
+    <div class="clist">
+      <a class="clink" href="https://t.me/ThejesterVerse" target="_blank" rel="noopener"><b>Telegram</b><span>@ThejesterVerse &rarr;</span></a>
+      <a class="clink" href="https://x.com/ThejesterVerse" target="_blank" rel="noopener"><b>X</b><span>@ThejesterVerse &rarr;</span></a>
+      <button class="clink" id="dc"><b>Discord</b><span>@thejesterVerse · copy</span></button>
+    </div>
+  </div>
+
+  <footer>
+    <span>© 2026 Thejesterverse. Lagos, Nigeria.</span>
+    <span>Follower and post figures from public X data, Nov 24, 2026. Logos belong to their projects.</span>
+  </footer>
+</div>
+</main>
+<div class="toast" id="toast">Copied</div>
+
+<script>
+(function(){
+  var $=function(s,c){return (c||document).querySelector(s)}, $$=function(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))};
+  function picked(g){return $$('[data-group="'+g+'"] .opt[aria-pressed="true"]').map(function(b){return b.textContent})}
+  function render(){
+    var nm=$('#nm').value.trim(), pj=$('#pj').value.trim(), need=picked('need');
+    $('#note').textContent=
+      'Hi Thejesterverse,\n\n'+
+      "I'm "+(nm||'—')+'.\n'+
+      'Project: '+(pj||'—')+'\n'+
+      'Stage: '+(picked('stage')[0]||'—')+'\n'+
+      'Looking for: '+(need.length?need.join(', '):'—')+'\n'+
+      'Timing: '+(picked('when')[0]||'—')+'\n\n'+
+      "Keen to hear how you'd approach it.";
+  }
+  $$('.opts').forEach(function(g){
+    var single=g.hasAttribute('data-single');
+    $$('.opt',g).forEach(function(b){
+      b.addEventListener('click',function(){
+        if(single){$$('.opt',g).forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true')}
+        else b.setAttribute('aria-pressed',b.getAttribute('aria-pressed')==='true'?'false':'true');
+        render();
+      });
+    });
+  });
+  ['#nm','#pj'].forEach(function(s){$(s).addEventListener('input',render)});
+  function toast(t){var el=$('#toast');el.textContent=t;el.classList.add('on');setTimeout(function(){el.classList.remove('on')},1600)}
+  function copy(text,msg){
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(text).then(function(){toast(msg)},fallback)}else fallback();
+    function fallback(){var ta=document.createElement('textarea');ta.value=text;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');toast(msg)}catch(e){toast('Select the text to copy')}ta.remove()}
+  }
+  $('#copy').addEventListener('click',function(){copy($('#note').textContent,'Note copied')});
+  $('#dc').addEventListener('click',function(){copy('thejesterVerse','Discord handle copied')});
+  render();
+})();
+</script>
+</body>
+</html>
