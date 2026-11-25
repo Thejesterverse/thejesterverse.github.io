@@ -19,7 +19,7 @@ window.SITE = {
     locationNote: "Open to remote work worldwide",
     studying: "Chemistry Education at the University of Uyo",
     headline: "I Build Partnerships, Grow Web3 Communities and Create Campaigns That Move Projects Forward.",
-    intro: "I'm Thejesterverse — a Web3 Business Development professional, KOL and community growth contributor working with projects across the global ecosystem.",
+    intro: "I'm Thejesterverse, a Web3 Business Development professional, KOL and community growth contributor working with projects around the world.",
     tagline: "I find projects the right rooms, then fill them.",
     quote: "The jester gets to say what the court won't. That's the job in a crowded timeline.",
     about: [
@@ -33,7 +33,7 @@ window.SITE = {
     x: "https://x.com/ThejesterVerse",
     telegram: "https://t.me/ThejesterVerse",
     discord: "thejesterVerse",
-    email: null,
+    email: "elishayehudah@gmail.com",
     siteUrl: "https://yehudahjr.github.io/thejesterverse/"
   },
 
@@ -56,7 +56,7 @@ window.SITE = {
 
   pillars: [
     { id: "bd", title: "Web3 BD & Partnerships", text: "I source projects, pitch the fit, and keep the partnership pipeline moving over X, Telegram and Discord." },
-    { id: "kol", title: "KOL, Content & Growth Marketing", text: "Research-led posts, campaign narrative and timing, and coordinated KOL rounds — not a pile of random shoutouts." },
+    { id: "kol", title: "KOL, Content & Growth Marketing", text: "Research-led posts, campaign narrative and timing, and coordinated KOL rounds, not a pile of random shoutouts." },
     { id: "community", title: "Community Management & Growth", text: "Ambassador work, daily cadence, moderation, and bringing people in through channels that already trust the voice." }
   ],
 
@@ -81,7 +81,7 @@ window.SITE = {
   roles: [
     { id: "actionmodel", name: "Action Model AI (ActionFi)", short: "Action Model", handle: "@ActionModelAI", url: "https://x.com/ActionModelAI", logo: "assets/logos/actionmodel.jpg", group: "current", title: "Business development", summary: "I source Web3 projects and pitch them on ActionFi, run cold outreach over X, Telegram and Discord, and keep the partnership pipeline tracked." },
     { id: "koinbx", name: "KoinBX", short: "KoinBX", handle: "@KoinBX", url: "https://x.com/KoinBX", logo: "assets/logos/koinbx.jpg", group: "current", title: "Official KOL", summary: "Content for KoinBX campaigns and trading contests." },
-    { id: "cellframe", name: "Cellframe", short: "Cellframe", handle: "@cellframenet", url: "https://x.com/cellframenet", logo: "assets/logos/cellframe.jpg", group: "current", title: "Core Contributor & Ambassador", summary: "Dec 2025 – Present. Community growth and awareness." },
+    { id: "cellframe", name: "Cellframe", short: "Cellframe", handle: "@cellframenet", url: "https://x.com/cellframenet", logo: "assets/logos/cellframe.jpg", group: "current", title: "Core Contributor & Ambassador", summary: "Dec 2025 to Present. Community growth and awareness." },
     { id: "kindworld", name: "KindWorld", short: "KindWorld", handle: "@kindworldlabs", url: "https://x.com/kindworldlabs", logo: "assets/logos/kindworld.jpg", group: "current", title: "Ambassador", summary: "Ambassador since Oct 13, 2026. Community growth and awareness." },
     { id: "shopinx", name: "ShopinX", short: "ShopinX", handle: "@shopinxSHOPINX", url: "https://x.com/shopinxSHOPINX", logo: "assets/logos/shopinx.jpg", group: "current", title: "Ambassador", summary: "Commerce and loyalty on BNB Chain, with GoBenefits offers across 400+ brands." },
 
@@ -143,7 +143,7 @@ window.SITE = {
     {
       id: "growth",
       title: "Growth Partnerships",
-      explanation: "Bringing new users in through the channels that already trust the voice — community, content, and direct introductions. Affiliate content partnerships included.",
+      explanation: "Bringing new users in through the channels that already trust the voice: community, content, and direct introductions. Affiliate content partnerships included.",
       deliverables: [
         "Affiliate content partnerships",
         "Trusted-channel introductions for new users",
@@ -196,7 +196,7 @@ window.SITE = {
     },
     {
       id: "sixr-team",
-      project: "Action Model — SIXR",
+      project: "Action Model: SIXR",
       role: "Business development (team campaign example)",
       objective: "An example of the kind of ActionFi campaign the Action Model team runs.",
       contribution: "I source Web3 projects and pitch them on ActionFi. This case study is a team result, not a personal one.",
@@ -273,7 +273,7 @@ window.SITE = {
       kicker: "Ongoing",
       covers: "I stay in the room: content, Spaces and the daily work of keeping a community active.",
       deliverables: ["Onboarding and discussion", "Moderation", "Ambassador representation"],
-      structure: "Ongoing retainer. Cadence agreed up front. No prices listed here — request a proposal.",
+      structure: "Ongoing retainer. Cadence agreed up front. No prices listed here. Request a proposal.",
       request: "Use the brief composer and pick Community Management or Ambassador Campaigns."
     },
     {
