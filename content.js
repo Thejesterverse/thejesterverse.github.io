@@ -1,7 +1,7 @@
 /* THEJESTERVERSE site content
  * Edit this file to update roles, affiliations, case studies, metrics,
  * testimonials, services, communities and contact. No build step.
- * Then commit and push to yehudahjr/thejesterverse.
+ * Then commit and push to Thejesterverse/thejesterverse.github.io.
  *
  * Role statuses:
  *   current | affiliate | past | collaboration | contribution
@@ -34,14 +34,14 @@ window.SITE = {
     telegram: "https://t.me/ThejesterVerse",
     discord: "thejesterVerse",
     email: "elishayehudah@gmail.com",
-    siteUrl: "https://yehudahjr.github.io/thejesterverse/"
+    siteUrl: "https://thejesterverse.github.io/"
   },
 
   seo: {
     title: "Thejesterverse · Web3 BD, KOL & ambassador",
     description: "Thejesterverse (@ThejesterVerse): Web3 business development, KOL and community growth. BD at Action Model, KOL for KoinBX, ambassador for Cellframe, KindWorld and ShopinX. Lagos, open to remote work.",
     keywords: "Web3 BD, Web3 KOL, Community Management, Web3 Partnerships, Thejesterverse",
-    ogImage: "https://yehudahjr.github.io/thejesterverse/assets/banner.jpg"
+    ogImage: "https://thejesterverse.github.io/assets/banner.jpg"
   },
 
   nav: [
